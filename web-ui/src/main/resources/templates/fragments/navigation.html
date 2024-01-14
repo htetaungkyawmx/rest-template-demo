@@ -3,7 +3,18 @@
 
 <body>
     <nav th:fragment="navigation" class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-        <a 
+        <a href="#" th:href="@{/home}" class="navbar-brand">Spring Rest Template</a>
+
+        <div class="collapse navbar-collapse" id="navbarExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" th:href="@{/home}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" th:href="@{/customers}">Customers</a>
+                </li>
+            </ul>
+        </div>
 
     </nav>
 </body>
